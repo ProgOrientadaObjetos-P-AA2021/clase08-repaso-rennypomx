@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete1;
+package paquete9;
 
 public class Ejecutor {
     public static void main(String[] args) {
@@ -16,20 +16,21 @@ public class Ejecutor {
         4. Explicar lo realizado.
             
         */
+
         
         Calificacion c1 = new Calificacion(10, "Computación");
         Calificacion c2 = new Calificacion(10, "Lógica");
         Calificacion c3 = new Calificacion(10, "Literatura");
-        
-        Profesor profesor1 = new Profesor("Tara Hernandez");
-        Profesor profesor2 = new Profesor("Gregory Walsh");
-        Profesor profesor3 = new Profesor("Kevin Page");
+
+        Profesor profesor1 = new Profesor("Tara Hernandez","Nombramiento");
+        Profesor profesor2 = new Profesor("Gregory Walsh","Contratado");
+        Profesor profesor3 = new Profesor("Kevin Page","Nombramiento");
         
         c1.establecerProfesor(profesor1);
         c2.establecerProfesor(profesor2);
         c3.establecerProfesor(profesor3);
-        
-        Calificacion [] lista = {profesor1, profesor2, profesor3}; 
+ 
+        Calificacion [] lista = {c1, c2, c3}; 
         
         LibretaCalificacion libreta1 = new LibretaCalificacion("Justin Powers",
                 lista);
@@ -39,3 +40,4 @@ public class Ejecutor {
         
     }
 }
+
